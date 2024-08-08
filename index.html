@@ -10,140 +10,141 @@
     <header id="header_container" class="header_container">
         <div class="primary_header">
             <div class="header_label">
-                <h1 class="app_logo">Report bugs</h1>
-                <div class="shopping_cart_container">
+                <h1 class="app_logo">Swag Labs</h1>
+                <div class="shopping_cart_container" id="cart-container">
                     <span id="cart-count">0</span>
-                    <img src="./images/shopping-cart_icon-icons.com_72552.svg" alt="Carrinho de compras" id="cart_icon">
+                    <img src="./images/shopping-cart_icon-icons.com_72552.svg" alt="Shopping Cart" id="cart_icon">
+                    <div id="cart-dropdown" class="cart-dropdown">
+                        <button id="checkout-button" class="btn btn_secondary">Checkout</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="header_secondary_container">
-            <span class="title">Products</span>
         </div>
     </header>
     <div id="inventory_container" class="inventory_container">
         <div class="inventory_list">
-            <div class="product_row">
-                <div class="inventory_item">
-                    <div class="inventory_item_img">
-                        <a href="#" id="item_4_img_link">
-                            <img alt="Sauce Labs Backpack" class="inventory_item_img" src="https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg">
-                        </a>
-                    </div>
-                    <div class="inventory_item_description">
-                        <div class="inventory_item_label">
-                            <a href="#" id="item_4_title_link">
-                                <h2 class="inventory_item_name">SBackpack</h2>
-                            </a>
-                            <p class="inventory_item_desc">Carry allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</p>
-                        </div>
-                        <div class="pricebar">
-                            <div class="inventory_item_price">$20.00</div>
-                            <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-sauce-labs-backpack" id="add-to-cart-sauce-labs-backpack" name="add-to-cart-sauce-labs-backpack" onclick="toggleCart(this)">Add to cart</button>
-                        </div>
-                    </div>
+            <!-- Product 1 -->
+            <div class="inventory_item">
+                <div class="inventory_item_img">
+                    <a href="#" id="item_1_img_link">
+                        <img alt="Casual Shirt" class="inventory_item_img" src="https://5.imimg.com/data5/SELLER/Default/2023/3/294445171/SO/ST/AJ/103363258/men-regular-fit-solid-casual-shirt-1000x1000.jpg">
+                    </a>
                 </div>
-                <div class="inventory_item">
-                    <div class="inventory_item_img">
-                        <a href="#" id="item_5_img_link">
-                            <img alt="SBackpack" class="inventory_item_img" src="https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg">
+                <div class="inventory_item_description">
+                    <div class="inventory_item_label">
+                        <a href="#" id="item_1_title_link">
+                            <h2 class="inventory_item_name">Casual Shirt</h2>
                         </a>
+                        <p class="inventory_item_desc">Comfortable and stylish casual shirt, perfect for everyday wear.</p>
                     </div>
-                    <div class="inventory_item_description">
-                        <div class="inventory_item_label">
-                            <a href="#" id="item_5_title_link">
-                                <h2 class="inventory_item_name">SBackpack</h2>
-                            </a>
-                            <p class="inventory_item_desc">Carry allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</p>
-                        </div>
-                        <div class="pricebar">
-                            <div class="inventory_item_price">R$20.00</div>
-                            <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-sauce-labs-backpack" id="add-to-cart-sauce-labs-backpack" name="add-to-cart-sauce-labs-backpack" onclick="toggleCart(this)">Add to cart</button>
-
-                        </div>
+                    <div class="pricebar">
+                        <div class="inventory_item_price">$25.00</div>
+                        <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-casual-shirt" id="add-to-cart-casual-shirt">Add to cart</button>
                     </div>
                 </div>
             </div>
-            <div class="product_row">
-                <div class="inventory_item">
-                    <div class="inventory_item_img">
-                        <a href="#" id="item_6_img_link">
-                            <img alt="Sauce Labs Backpack" class="inventory_item_img" src="https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg">
-                        </a>
-                    </div>
-                    <div class "inventory_item_description">
-                        <div class="inventory_item_label">
-                            <a href="#" id="item_6_title_link">
-                                <h2 class="inventory_item_name">Sauce Labs Backpack</h2>
-                            </a>
-                            <p class="inventory_item_desc">Carry allTheThings() wiqqqqqqth the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</p>
-                        </div>
-                        <div class="pricebar">
-                            <div class="inventory_item_price">$29.99</div>
-                            <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-sauce-labs-backpack" id="add-to-cart-sauce-labs-backpack" name="add-to-cart-sauce-labs-backpack" onclick="toggleCart(this)">Add to cart</button>
-
-                        </div>
-                    </div>
+        
+            <!-- Product 2 -->
+            <div class="inventory_item">
+                <div class="inventory_item_img">
+                    <a href="#" id="item_2_img_link">
+                        <img alt="Denim Jacket" class="inventory_item_img" src="https://img.mytheresa.com/1094/1238/100/jpeg/catalog/product/7c/P00840667_b1.jpg">
+                    </a>
                 </div>
-                <div class="inventory_item">
-                    <div class="inventory_item_img">
-                        <a href="#" id="item_7_img_link">
-                            <img alt="Sauce Labs Backpack" class="inventory_item_img" src="https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg">
+                <div class="inventory_item_description">
+                    <div class="inventory_item_label">
+                        <a href="#" id="item_2_title_link">
+                            <h2 class="inventory_item_name">Denim Jacket</h2>
                         </a>
+                        <p class="inventory_item_desc">Classic denim jacket with a modern fit, ideal for layering.</p>
                     </div>
-                    <div class="inventory_item_description">
-                        <div class="inventory_item_label">
-                            <a href="#" id="item_7_title_link">
-                                <h2 class="inventory_item_name">Sabs </h2>
-                            </a>
-                            <p class="inventory_item_desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="pricebar">
-                            <div class="inventory_item_price">$2.99</div>
-                            <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-sauce-labs-backpack" id="add-to-cart-sauce-labs-backpack" name="add-to-cart-sauce-labs-backpack" onclick="toggleCart(this)">Adicionar ao carrinho</button>
-
-                        </div>
+                    <div class="pricebar">
+                        <div class="inventory_item_price">$45.00</div>
+                        <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-denim-jacket" id="add-to-cart-denim-jacket">Add to cart</button>
                     </div>
                 </div>
             </div>
-            <div class="product_row">
-                <div class="inventory_item">
-                    <div class="inventory_item_img">
-                        <a href="#" id="item_8_img_link">
-                            <img alt="Sauce Labs Backpack" class="inventory_item_img" src="https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg">
+        
+            <!-- Product 3 -->
+            <div class="inventory_item">
+                <div class="inventory_item_img">
+                    <a href="#" id="item_3_img_link">
+                        <img alt="Summer Dress" class="inventory_item_img" src="https://www.lulus.com/images/product/xlarge/10637621_302992.jpg?w=560&hdpi=1">
+                    </a>
+                </div>
+                <div class="inventory_item_description">
+                    <div class="inventory_item_label">
+                        <a href="#" id="item_3_title_link">
+                            <h2 class="inventory_item_name">Summer Dress</h2>
                         </a>
+                        <p class="inventory_item_desc">Lightweight and airy dress, perfect for summer days.</p>
                     </div>
-                    <div class="inventory_item_description">
-                        <div class="inventory_item_label">
-                            <a href="#" id="item_8_title_link">
-                                <h2 class="inventory_item_name">Sauce Labs Backpack</h2>
-                            </a>
-                            <p class="inventory_item_desc">Carry allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</p>
-                        </div>
-                        <div class="pricebar">
-                            <div class="inventory_item_price">$29.99</div>
-
-                        </div>
+                    <div class="pricebar">
+                        <div class="inventory_item_price">$30.00</div>
+                        <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-summer-dress" id="add-to-cart-summer-dress">Add to cart</button>
                     </div>
                 </div>
-                <div class="inventory_item">
-                    <div class="inventory_item_img">
-                        <a href="#" id="item_9_img_link">
-                            <img alt="Sauce Labs Backpack" class="inventory_item_img" src="https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg">
+            </div>
+        
+            <!-- Product 4 -->
+            <div class="inventory_item">
+                <div class="inventory_item_img">
+                    <a href="#" id="item_4_img_link">
+                        <img alt="Sneakers" class="inventory_item_img" src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2012/06/26/1720120626101453.jpg">
+                    </a>
+                </div>
+                <div class="inventory_item_description">
+                    <div class="inventory_item_label">
+                        <a href="#" id="item_4_title_link">
+                            <h2 class="inventory_item_name">Sneakers</h2>
                         </a>
+                        <p class="inventory_item_desc">Stylish sneakers that offer both comfort and durability.</p>
                     </div>
-                    <div class="inventory_item_description">
-                        <div class="inventory_item_label">
-                            <a href="#" id="item_9_title_link">
-                                <h2 class="inventory_item_name">Sauce Labs Backpack</h2>
-                            </a>
-                            <p class="inventory_item_desc">Carry allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</p>
-                        </div>
-                        <div class="pricebar">
-                            <div class="inventory_item_price">$29.99</div>
-                            <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-sauce-labs-backpack" id="add-to-cart-sauce-labs-backpack" name="add-to-cart-sauce-labs-backpack" onclick="toggleCart(this)">Add to cart</button>
+                    <div class="pricebar">
+                        <div class="inventory_item_price">$60.00</div>
+                        <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-sneakers" id="add-to-cart-sneakers">Add to cart</button>
+                    </div>
+                </div>
+            </div>
 
-                        </div>
+            <!-- Product 5 -->
+            <div class="inventory_item">
+                <div class="inventory_item_img">
+                    <a href="#" id="item_5_img_link">
+                        <img alt="Leather Boots" class="inventory_item_img" src="https://www.esportepresidente.com.br/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/b/o/bota_nike_manoa_leather_preta.jpg">
+                    </a>
+                </div>
+                <div class="inventory_item_description">
+                    <div class="inventory_item_label">
+                        <a href="#" id="item_5_title_link">
+                            <h2 class="inventory_item_name">Leather Boots</h2>
+                        </a>
+                        <p class="inventory_item_desc">Rugged and stylish leather boots for all occasions.</p>
+                    </div>
+                    <div class="pricebar">
+                        <div class="inventory_item_price">$80.00</div>
+                        <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-leather-boots" id="add-to-cart-leather-boots">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="inventory_item">
+                <div class="inventory_item_img">
+                    <a href="#" id="item_6_img_link">
+                        <img alt="Beanie Hat" class="inventory_item_img" src="https://m.media-amazon.com/images/I/81ARE7gOclL._AC_SX679_.jpg">
+                    </a>
+                </div>
+                <div class="inventory_item_description">
+                    <div class="inventory_item_label">
+                        <a href="#" id="item_6_title_link">
+                            <h2 class="inventory_item_name">Beanie Hat</h2>
+                        </a>
+                        <p class="inventory_item_desc">Cozy beanie hat to keep you warm in style.</p>
+                    </div>
+                    <div class="pricebar">
+                        <div class="inventory_item_price">$15.00</div>
+                        <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-beanie-hat" id="add-to-cart-beanie-hat">Add to cart</button>
                     </div>
                 </div>
             </div>

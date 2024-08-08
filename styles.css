@@ -1,216 +1,220 @@
-    /* Estilos globais */
-    body, html {
-        font-family: 'DM Sans', Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-        background-color: #fff;
-        color: #132322;
-        height: 100vh;
-        margin: 0;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: antialiased;
-    }
-
-    /* Estilos do cabeçalho principal */
-    .primary_header {
-        border-bottom: 1px solid #ededed;
-        height: 56px;
-    }
-
-    .primary_header .app_logo {
-        font-family: 'DM Mono', sans-serif;
-        font-size: 24px;
-        line-height: 48px;
-        text-align: center;
-        margin: 0 50px;
-    }
-
-    /* Estilos do contêiner do cabeçalho secundário */
-    .header_secondary_container {
-        background: #fff;
-        width: 100%;
-        height: 56px;
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-
-    .header_secondary_container .title {
-        color: #132322;
-        font-family: 'DM Sans', sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 48px;
-    }
-
-    /* Estilos do contêiner de inventário */
-    .inventory_container {
-        background-color: #fff;
-        overflow: hidden;
-        padding-top: 40px;
-        margin: 0 auto 30px;
-    }
-
-    /* Estilos da lista de inventário */
-    .inventory_list {
-        max-width: 1060px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 0 15px 30px;
-    }
-
-    /* Estilos dos itens do inventário */
-    .inventory_item {
-        border: 1px solid #ededed;
-        background: #fff;
-        position: relative;
-        margin-right: 20px; /* Adicione margem direita para separar os produtos lado a lado */
-        display: flex;
-        box-sizing: border-box;
-        border-radius: 8px;
-        /* Outros estilos para os produtos, como borda, fundo, etc. */
-    }
-    /* Estilos para o layout de duas colunas */
-    .inventory_list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    /* Estilos para as linhas de produtos */
-    .product_row {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px; /* Espaço entre as linhas de produtos */
-    }
-
-    /* Estilos dos itens de inventário */
-    .inventory_item {
-        width: calc(50% - 10px); /* Largura de 50% com um pequeno espaço entre os produtos */
-        /* Outros estilos para os produtos, como borda, fundo, etc. */
-    }
-
-
-
-    /* Estilos da imagem do item do inventário */
-    .inventory_item_img {
-        flex: 1 1;
-        overflow: hidden;
-    }
-
-    .inventory_item_img a {
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
-
-    .inventory_item_img img {
-        height: 100%;
-        border-bottom-left-radius: 4px;
-        border-top-left-radius: 4px;
-    }
-
-    /* Estilos da descrição do item do inventário */
-    .inventory_item_description {
-        flex: 2 1;
-        flex-direction: column;
-        padding: 20px 34px 20px 20px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .inventory_item_label > a {
-        color: #4a4a4a;
-        text-decoration: none;
-    }
-
-    .inventory_item_name {
-        font-family: 'DM Mono', sans-serif;
-        font-size: 20px;
-        font-weight: 500;
-        color: #18583a;
-    }
-
-    .inventory_item_desc {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 10px;
-        color: #132322;
-        width: inherit; /* ou width: 75%; */
-    }
-
-    /* Estilos do botão */
-    .btn {
-        border: none;
-        box-sizing: border-box;
-        cursor: pointer;
-        outline: none;
-        padding: 6px 20px;
-        font-weight: 500;
-        font-family: 'DM Sans', sans-serif;
-        display: inline-block;
-        text-decoration: none;
-        border-radius: 4px;
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .btn_small {
-        width: 160px;
-    }
-
-    .btn_primary {
-        border: 1px solid #132322;
-        color: #132322;
-        background-color: #fff;
-    }
-
-
-    /* Estilos específicos para telas maiores */
-    @media only screen and (min-width: 1060px) {
-        .inventory_item {
-            height: 240px;
-            width: 505px;
-        }
-    }
-/* Estilos para o ícone do carrinho */
-/* Estilos para o ícone do carrinho */
-#cart_icon {
-    width: 24px; /* Largura do ícone */
-    height: 24px; /* Altura do ícone */
-    cursor: pointer; /* Alterar cursor ao passar o mouse */
-    position: absolute;
-    top: 10px; /* Ajuste a distância a partir do topo */
-    right: 10px; /* Ajuste a distância a partir da direita */
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc; /* Cor de fundo mais suave e clara */
+    color: #333;
 }
 
-/* Estilos para o contador do carrinho */
+header {
+    background-color: #3498db; /* Cor de fundo clara e moderna */
+    color: #fff;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
 
-/* Estilos para o contador do carrinho */
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app_logo {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.shopping_cart_container {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
 #cart-count {
-    background-color: #f00; /* Cor de fundo do contador */
-    color: #fff; /* Cor do texto do contador */
-    border-radius: 50%; /* Transformar o contador em um círculo */
-    padding: 2px 6px; /* Espaçamento interno do contador */
-    font-size: 14px; /* Tamanho da fonte do contador */
+    background-color: #e74c3c; /* Vermelho padrão */
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#cart_icon {
+    width: 28px;
+    height: 28px;
+}
+
+.cart-dropdown {
+    display: none;
     position: absolute;
-    top: -10px; /* Ajuste para posicioná-lo um pouco acima do ícone do carrinho */
-    right: -10px; /* Ajuste para posicioná-lo à direita do ícone do carrinho */
-    z-index: 1; /* Certifique-se de que o contador esteja na frente do ícone */
-}
-/* Estilos para o botão "Remove from cart" */
-/* Estilos para o botão "Remove from cart" */
-.btn_remove {
-    background-color: transparent; /* Fundo transparente */
-    color: #f00; /* Cor do texto vermelho */
-    border: 1px solid #f00; /* Borda vermelha */
+    top: 45px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 6px;
+    z-index: 1001;
+    animation: dropdown 0.3s ease-out;
 }
 
+.cart-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
 
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
 
+/* Estilo do Botão Add to Cart */
+.btn_add_to_cart {
+    background-color: #2ecc71; /* Verde padrão */
+    color: #fff;
+    border: 1px solid #2ecc71;
+}
 
-    
+.btn_add_to_cart:hover {
+    background-color: #27ae60; /* Verde escuro no hover */
+    border-color: #27ae60;
+    transform: translateY(-3px);
+}
+
+.btn_add_to_cart:active {
+    background-color: #1e8e4f; /* Verde ainda mais escuro quando clicado */
+}
+
+/* Estilo do Botão Remove from Cart */
+.btn_remove_from_cart {
+    background-color: #e74c3c; /* Vermelho padrão */
+    color: #fff;
+    border: 1px solid #e74c3c;
+}
+
+.btn_remove_from_cart:hover {
+    background-color: #c0392b; /* Vermelho escuro no hover */
+    border-color: #c0392b;
+    transform: translateY(-3px);
+}
+
+.btn_remove_from_cart:active {
+    background-color: #b03a2e; /* Vermelho ainda mais escuro quando clicado */
+}
+
+/* Estilo da Lista de Produtos */
+.inventory_container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.inventory_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.inventory_item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+}
+
+.inventory_item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.inventory_item_img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.inventory_item_description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.inventory_item_name {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.inventory_item_desc {
+    font-size: 15px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.pricebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.inventory_item_price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Animações e Hovers */
+.shopping_cart_container:hover .cart-dropdown {
+    display: block;
+    animation: dropdown 0.3s ease-out;
+}
+
+@keyframes dropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .inventory_list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .inventory_list {
+        grid-template-columns: 1fr;
+    }
+}
+

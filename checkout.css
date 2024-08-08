@@ -1,0 +1,106 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3498db; /* Cor de destaque */
+}
+
+#cart-items {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+#checkout-form {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+#checkout-form input[type="text"],
+#checkout-form input[type="email"] {
+    width: calc(100% - 22px); /* Ajusta para levar em conta o padding e border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#checkout-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #3498db; /* Cor de destaque */
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#checkout-form button:hover {
+    background-color: #2980b9; /* Tom mais escuro para hover */
+    transform: translateY(-2px);
+}
+
+#checkout-form button:active {
+    background-color: #1f6b9d; /* Tom ainda mais escuro para clique */
+    transform: translateY(0);
+}
+
+#mensagem-sucesso {
+    color: #007f00;
+    background-color: #ccffcc;
+    border: 1px solid #66cc66;
+}
+
+#mensagem-erro {
+    color: #ff0000;
+    background-color: #ffc8c8;
+    border: 1px solid #ff6666;
+}
+
+.mensagem {
+    font-weight: bold;
+    display: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.mensagem {
+    display: none;
+}
+
+.mensagem-erro {
+    display: none;
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}

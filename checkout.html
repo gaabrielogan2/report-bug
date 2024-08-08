@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="checkout.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div id="cart-items">
+        <!-- Adicione aqui uma visualização dos itens no carrinho, se necessário -->
+    </div>
+    <form id="checkout-form">
+        <form id="checkout-form">
+            <p id="mensagem-erro" class="mensagem">Please correct the highlighted campos.</p>
+            <p id="mensagem-sucesso" class="mensagem">Thank you for shopping with os. ordem placed successfully!</p>
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <p id="name-erro" class="mensagem-erro"></p>
+        
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+            
+        
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+        
+        
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state">
+
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+        
+        
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip">
+            <p id="zip-erro" class="mensagem-erro"></p>
+
+        
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone">
+            <p id="phone-erro" class="mensagem-erro"></p>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <p id="email-erro" class="mensagem-erro"></p>
+        
+            <button type="submit">Submit Order</button>
+        </form>
+        
+    </form>
+    <script src="checkout.js"></script>
+</body>
+</html>
